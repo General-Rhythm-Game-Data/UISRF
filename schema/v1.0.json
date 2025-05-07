@@ -5,6 +5,7 @@
     "properties": {
         "version": {
             "type": "string",
+            "const": "1.0",
             "description": "Format standard version"
         },
         "game": {
