@@ -1,0 +1,104 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "description": "Unified Interchangeable SongRecord Format Standard",
+    "type": "object",
+    "properties": {
+        "version": {
+            "type": "string",
+            "description": "Format standard version"
+        },
+        "game": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Game name (e.g. 'Rotaeno')"
+                },
+                "version": {
+                    "type": "string",
+                    "description": "Game version (e.g. '2.9.0')"
+                }
+            },
+            "required": [
+                "name",
+                "version"
+            ],
+            "additionalProperties": false
+        },
+        "songs": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "Unique song identifier"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Song display name"
+                    },
+                    "records": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "object",
+                            "properties": {
+                                "score": {
+                                    "type": "number",
+                                    "description": "Achieved score"
+                                },
+                                "status": {
+                                    "type": "string",
+                                    "description": "Song status abbreviation"
+                                },
+                                "level": {
+                                    "type": "number",
+                                    "description": "Difficulty level (may include decimals)"
+                                },
+                                "info": {
+                                    "type": "object",
+                                    "patternProperties": {
+                                        "^.*$": {
+                                            "type": "string",
+                                            "description": "Optional metadata key-value pairs"
+                                        }
+                                    },
+                                    "description": "Additional gameplay metadata"
+                                }
+                            },
+                            "required": [
+                                "score",
+                                "status",
+                                "level"
+                            ],
+                            "additionalProperties": false
+                        },
+                        "description": "Difficulty level records"
+                    }
+                },
+                "required": [
+                    "id",
+                    "name",
+                    "records"
+                ],
+                "additionalProperties": false
+            },
+            "description": "List of song records"
+        },
+        "other": {
+            "type": "object",
+            "patternProperties": {
+                "^.*$": {
+                    "type": "string"
+                }
+            },
+            "description": "Reserved for extensions"
+        }
+    },
+    "required": [
+        "version",
+        "game",
+        "songs"
+    ],
+    "additionalProperties": false
+}
