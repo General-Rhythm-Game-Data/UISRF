@@ -1,0 +1,63 @@
+{
+    "version": "1.0",
+    "game": {
+        "name": "Rotaeno",
+        "version": "2.9.0"
+    },
+    "songs": [
+        {
+            "id": "battle-no1",
+            "name": "BATTLE NO.1",
+            "records": {
+                "I": {
+                    "score": 1010000,
+                    "status": "all-perfect-plus",
+                    "level": 3.0,
+                    "info": {
+                        "is_cleared": true,
+                        "artist": "TANO*C Sound Team",
+                        "chart": "TangScend",
+                        "jacket": "HARDCORE TANO*C"
+                    }
+                },
+                "II": {
+                    "score": 1010000,
+                    "status": "all-perfect-plus",
+                    "level": 7.0,
+                    "info": {
+                        "is_cleared": true,
+                        "artist": "TANO*C Sound Team",
+                        "chart": "TangScend",
+                        "jacket": "HARDCORE TANO*C"
+                    }
+                },
+                "III": {
+                    "score": 1010000,
+                    "status": "all-perfect-plus",
+                    "level": 9.7,
+                    "info": {
+                        "is_cleared": true,
+                        "artist": "TANO*C Sound Team",
+                        "chart": "TangScend",
+                        "jacket": "HARDCORE TANO*C"
+                    }
+                },
+                "IV": {
+                    "score": 1010000,
+                    "status": "all-perfect-plus",
+                    "level": 9.7,
+                    "info": {
+                        "is_cleared": true,
+                        "artist": "TANO*C Sound Team",
+                        "chart": "ROTAENO NO.1",
+                        "jacket": "HARDCORE TANO*C"
+                    }
+                }
+            }
+        }
+    ],
+    "other": {
+        "update_time": "2023-02-28",
+        "update_version": "1.7.0"
+    }
+}
