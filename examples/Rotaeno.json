@@ -15,7 +15,6 @@
                     "level": 3.0,
                     "info": {
                         "is_cleared": true,
-                        "artist": "TANO*C Sound Team",
                         "chart": "TangScend",
                         "jacket": "HARDCORE TANO*C"
                     }
@@ -26,7 +25,6 @@
                     "level": 7.0,
                     "info": {
                         "is_cleared": true,
-                        "artist": "TANO*C Sound Team",
                         "chart": "TangScend",
                         "jacket": "HARDCORE TANO*C"
                     }
@@ -37,7 +35,6 @@
                     "level": 9.7,
                     "info": {
                         "is_cleared": true,
-                        "artist": "TANO*C Sound Team",
                         "chart": "TangScend",
                         "jacket": "HARDCORE TANO*C"
                     }
@@ -48,16 +45,17 @@
                     "level": 9.7,
                     "info": {
                         "is_cleared": true,
-                        "artist": "TANO*C Sound Team",
                         "chart": "ROTAENO NO.1",
                         "jacket": "HARDCORE TANO*C"
                     }
                 }
+            },
+            "meta" {
+                "artist": "TANO*C Sound Team",
+                "duration": 132,
+                "release_time": "2023-02-28",
+                "release_version": "1.7.0"
             }
         }
-    ],
-    "other": {
-        "update_time": "2023-02-28",
-        "update_version": "1.7.0"
-    }
+    ]
 }
