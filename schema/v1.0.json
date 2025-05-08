@@ -75,6 +75,15 @@
                             "additionalProperties": false
                         },
                         "description": "Difficulty level records"
+                    },
+                    "meta": {
+                        "type": "object",
+                        "patternProperties": {
+                            "^.*$": {
+                                "type": "string",
+                                "description": "Optional metadata key-value pairs"
+                            }
+                        }
                     }
                 },
                 "required": [
